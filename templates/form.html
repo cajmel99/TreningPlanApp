@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='predict_styles.css') }}">
+
+</head>
+<body>
+    <form action="/predict" method="post">
+        Date [YYYY-MM-DD]: <input type="text" name="Date"><br>
+        Distance [km]: <input type="text" name="Distance"><br>
+        Max HR: <input type="text" name="Max HR"><br>
+        Max Run Cadence: <input type="text" name="Max Run Cadence"><br>
+        Total Ascent [m]: <input type="text" name="Total Ascent"><br>
+        Total Descent [m]: <input type="text" name="Total Descent"><br>
+        Avg Stride Length [m]: <input type="text" name="Avg Stride Length"><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
